@@ -2,12 +2,15 @@ spring:
   application:
     name: "configserver"
   profiles:
-    active: native
+#    active: native
+    active: git
   cloud:
     config:
       server:
-        native:
-          search-locations: "classpath:/config"
+#        native:
+#          search-locations: "classpath:/config"
+        git:
+          uri: "https://github.com/mjlslink/bankapp-config.git"
 
 server:
   port:
