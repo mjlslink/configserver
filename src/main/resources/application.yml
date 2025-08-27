@@ -16,6 +16,9 @@ spring:
           timeout: 5
           clone-on-start: true
           force-pull: true
+encrypt:
+  key: "my-encryption-key-is-symmetric"
+
 server:
   port:
     8071
